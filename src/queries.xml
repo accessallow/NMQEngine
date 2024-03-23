@@ -1,0 +1,12 @@
+<!-- src/queries.xml -->
+<queries>
+    <query queryId="Employees">SELECT * FROM Employees;</query>
+    <query queryId="Orders">SELECT * FROM Orders;</query>
+    <query queryId="Customers">SELECT * FROM Customers;</query>
+    <query queryId="OrderDetails">SELECT * FROM OrderDetails;</query>
+    <query queryId="Products">SELECT * FROM Products;</query>
+    <query queryId="Shippers">SELECT * FROM Shippers;</query>
+    <query queryId="Suppliers">SELECT * FROM Suppliers;</query>
+    <query queryId="lastname">select * from Employees e where e.LastName like '%{pattern}%';</query>
+    <query queryId="q1">select * from Orders o where o.CustomerID = {customerId} and OrderID={orderId};</query>
+</queries>
